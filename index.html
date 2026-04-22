@@ -87,24 +87,13 @@ section {
     <a href="reparaciones.html">Restauración</a>
     <a href="instalaciones.html">Instalaciones</a>
 </section>
-<div id="rating">
-  <p>Califica nuestro servicio:</p>
+<h3>Deja tu opinión</h3>
 
-  <span onclick="rate(1)">⭐</span>
-  <span onclick="rate(2)">⭐</span>
-  <span onclick="rate(3)">⭐</span>
-  <span onclick="rate(4)">⭐</span>
-  <span onclick="rate(5)">⭐</span>
-
-  <p id="result"></p>
-</div>
-
-<script>
-function rate(value) {
-    document.getElementById("result").innerText =
-    "Gracias por calificar con " + value + " estrellas ⭐";
-}
-</script>
+<form>
+  <input placeholder="Tu nombre"><br><br>
+  <textarea placeholder="Tu comentario"></textarea><br><br>
+  <button type="submit">Enviar</button>
+</form>
 
 </body>
 </html>
