@@ -2,34 +2,43 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Muebles Yao y Ado</title>
 
 <style>
 body {
-    font-family: Arial;
     margin: 0;
-    background: #f4f4f4;
+    font-family: Arial;
 }
 
 /* HERO */
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
     url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1470');
     background-size: cover;
     background-position: center;
     color: white;
     text-align: center;
-    padding: 100px 20px;
+    padding: 120px 20px;
 }
 
-/* BOTONES */
-.nav {
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background: #25D366;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+}
+
+/* SECCIONES */
+section {
+    padding: 40px;
     text-align: center;
-    margin: 20px;
 }
 
-.nav a {
+/* BOTONES MENU */
+.menu a {
     margin: 10px;
     padding: 10px 20px;
     background: #007BFF;
@@ -39,109 +48,45 @@ body {
     transition: 0.3s;
 }
 
-.nav a:hover {
-    background: #0056b3;
+.menu a:hover {
     transform: scale(1.1);
 }
 
-/* SECCIONES */
-section {
-    padding: 40px;
-    text-align: center;
-}
-
-/* SERVICIOS */
-.servicio {
-    background: white;
+/* CARDS */
+.card {
+    background: #f5f5f5;
     margin: 10px;
     padding: 15px;
     border-radius: 10px;
-}
-
-/* GALERÍA */
-.galeria img {
-    width: 250px;
-    margin: 10px;
-    border-radius: 10px;
-}
-
-/* FOOTER */
-footer {
-    background: #222;
-    color: white;
-    padding: 20px;
-}
-
-/* BOTÓN WHATSAPP */
-.whatsapp {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #25D366;
-    color: white;
-    padding: 15px;
-    border-radius: 50%;
-    text-decoration: none;
 }
 </style>
+
 </head>
 
 <body>
 
-<!-- HERO -->
 <div class="hero">
     <h1>Muebles Yao y Ado</h1>
-    <p>Fabricación y restauración de todo tipo de inmobiliarios</p>
+    <p>Fabricación y restauración de muebles con calidad profesional</p>
+
+    <a class="btn" href="https://wa.me/18293319722">Contactar ahora</a>
 </div>
 
-<!-- BOTONES -->
-<div class="nav">
-  <a href="muebles.html">Muebles</a>
-<a href="reparaciones.html">Reparaciones</a>
-<a href="instalaciones.html">Instalaciones</a>
-</div>
-
-<!-- MUEBLES -->
-<section id="muebles">
-    <h2>Muebles</h2>
-    <div class="galeria">
-        <img src="https://via.placeholder.com/300">
-        <img src="https://via.placeholder.com/300">
-    </div>
-</section>
-
-<!-- REPARACIONES -->
-<section id="reparaciones">
-    <h2>Reparaciones</h2>
-    <div class="galeria">
-        <img src="https://via.placeholder.com/300">
-        <img src="https://via.placeholder.com/300">
-    </div>
-</section>
-
-<!-- INSTALACIONES -->
-<section id="instalaciones">
-    <h2>Instalaciones</h2>
-    <div class="galeria">
-        <img src="https://via.placeholder.com/300">
-        <img src="https://via.placeholder.com/300">
-    </div>
-</section>
-
-<!-- CONTACTO -->
 <section>
-    <h2>Contáctanos</h2>
-    <p>
-        📞 <a href="tel:+18293319722">8293319722</a>
-    </p>
+    <h2>¿Qué hacemos?</h2>
+
+    <div class="card">Fabricación de muebles a medida</div>
+    <div class="card">Restauración de muebles antiguos</div>
+    <div class="card">Instalaciones y reparaciones</div>
 </section>
 
-<!-- WHATSAPP -->
-<a href="https://wa.me/18293319722" class="whatsapp">💬</a>
+<section class="menu">
+    <h2>Ver Catálogos</h2>
 
-<footer>
-    <p>© 2026 Muebles Yao y Ado</p>
-</footer>
+    <a href="muebles.html">Muebles</a>
+    <a href="reparaciones.html">Restauración</a>
+    <a href="instalaciones.html">Instalaciones</a>
+</section>
 
 </body>
 </html>
