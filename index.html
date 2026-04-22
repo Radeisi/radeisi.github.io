@@ -2,86 +2,138 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Muebles Yao y Ado</title>
 
 <style>
 body {
-    font-family: Arial;
     margin: 0;
-    background: #f4f4f4;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
 }
 
+/* HEADER */
 header {
-    background: #0d6efd;
+    background: linear-gradient(90deg, #0d6efd, #00c6ff);
     color: white;
-    padding: 20px;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+/* SECCIONES */
+section {
+    padding: 30px;
     text-align: center;
 }
 
-section {
-    padding: 20px;
+.servicios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.servicio {
+.card {
     background: white;
+    margin: 15px;
+    padding: 20px;
+    width: 250px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* BOTÓN */
+.boton {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #25D366;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+/* GALERÍA */
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.galeria img {
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
     margin: 10px;
-    padding: 15px;
     border-radius: 10px;
 }
 
-.boton {
-    display: inline-block;
-    padding: 10px 20px;
-    background: green;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
+/* FOOTER */
 footer {
-    background: #222;
+    background: #111;
     color: white;
-    text-align: center;
-    padding: 10px;
+    padding: 20px;
 }
 </style>
+
 </head>
 
 <body>
 
 <header>
     <h1>Muebles Yao y Ado</h1>
-    <p>Calidad y confianza en cada trabajo</p>
+    <p>Calidad, confianza y soluciones a tu medida</p>
 </header>
 
 <section>
     <h2>Servicios</h2>
 
-    <div class="servicio">
-        <h3>Fabricación de muebles</h3>
-        <p>Diseños modernos y personalizados</p>
+    <div class="servicios">
+        <div class="card">
+            <h3>Muebles a medida</h3>
+            <p>Diseños modernos y personalizados</p>
+        </div>
+
+        <div class="card">
+            <h3>Reparaciones</h3>
+            <p>Electricidad, plomería y más</p>
+        </div>
+
+        <div class="card">
+            <h3>Instalaciones</h3>
+            <p>Aires, TV, equipos</p>
+        </div>
     </div>
 
-    <div class="servicio">
-        <h3>Reparaciones</h3>
-        <p>Electricidad, plomería y más</p>
-    </div>
-
-    <div class="servicio">
-        <h3>Instalaciones</h3>
-        <p>Televisores, aires, etc.</p>
-    </div>
-
-    <br>
-    <a class="boton" href="https://wa.me/8293319722" target="_blank">
-        Escríbenos por WhatsApp
+    <a class="boton" href="https://wa.me/18090000000" target="_blank">
+        Contactar por WhatsApp
     </a>
 </section>
 
+<section>
+    <h2>Galería de trabajos</h2>
+
+    <div class="galeria">
+        <img src="https://via.placeholder.com/300">
+        <img src="https://via.placeholder.com/300">
+        <img src="https://via.placeholder.com/300">
+    </div>
+</section>
+
 <footer>
-    <p>📞 8293319722</p>
+    <p>📞 809-000-0000</p>
+    <p>Santiago, República Dominicana</p>
 </footer>
 
 </body>
-</html>
 </html>
