@@ -7,80 +7,140 @@
 
 <style>
 body {
+    font-family: Arial;
     margin: 0;
-    font-family: Arial, sans-serif;
+    background: #f4f4f4;
 }
 
 /* HERO */
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-    url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1470');
-    
-    height: 500px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1470');
+    background-size: cover;
+    background-position: center;
     color: white;
+    text-align: center;
+    padding: 100px 20px;
 }
 
-.boton {
-    margin-top: 20px;
-    padding: 12px 25px;
-    background: #25D366;
+/* BOTONES */
+.nav {
+    text-align: center;
+    margin: 20px;
+}
+
+.nav a {
+    margin: 10px;
+    padding: 10px 20px;
+    background: #007BFF;
     color: white;
     text-decoration: none;
-    border-radius: 30px;
+    border-radius: 20px;
+    transition: 0.3s;
 }
 
-/* SERVICIOS */
+.nav a:hover {
+    background: #0056b3;
+    transform: scale(1.1);
+}
+
+/* SECCIONES */
 section {
     padding: 40px;
     text-align: center;
 }
 
-.card {
-    background: #f5f5f5;
+/* SERVICIOS */
+.servicio {
+    background: white;
     margin: 10px;
-    padding: 20px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* GALERÍA */
+.galeria img {
+    width: 250px;
+    margin: 10px;
     border-radius: 10px;
 }
 
 /* FOOTER */
 footer {
-    background: #111;
+    background: #222;
     color: white;
     padding: 20px;
-    text-align: center;
+}
+
+/* BOTÓN WHATSAPP */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    text-decoration: none;
 }
 </style>
-
 </head>
 
 <body>
 
+<!-- HERO -->
 <div class="hero">
     <h1>Muebles Yao y Ado</h1>
     <p>Soluciones modernas para tu hogar y negocio</p>
-
-    <a class="boton" href="https://wa.me/18090000000" target="_blank">
-        Solicitar servicio
-    </a>
 </div>
 
-<section>
-    <h2>Servicios</h2>
+<!-- BOTONES -->
+<div class="nav">
+    <a href="#muebles">Muebles</a>
+    <a href="#reparaciones">Reparaciones</a>
+    <a href="#instalaciones">Instalaciones</a>
+</div>
 
-    <div class="card">Muebles a medida</div>
-    <div class="card">Reparaciones</div>
-    <div class="card">Instalaciones</div>
+<!-- MUEBLES -->
+<section id="muebles">
+    <h2>Muebles</h2>
+    <div class="galeria">
+        <img src="https://via.placeholder.com/300">
+        <img src="https://via.placeholder.com/300">
+    </div>
 </section>
 
+<!-- REPARACIONES -->
+<section id="reparaciones">
+    <h2>Reparaciones</h2>
+    <div class="galeria">
+        <img src="https://via.placeholder.com/300">
+        <img src="https://via.placeholder.com/300">
+    </div>
+</section>
+
+<!-- INSTALACIONES -->
+<section id="instalaciones">
+    <h2>Instalaciones</h2>
+    <div class="galeria">
+        <img src="https://via.placeholder.com/300">
+        <img src="https://via.placeholder.com/300">
+    </div>
+</section>
+
+<!-- CONTACTO -->
+<section>
+    <h2>Contáctanos</h2>
+    <p>
+        📞 <a href="tel:+18293319722">8293319722</a>
+    </p>
+</section>
+
+<!-- WHATSAPP -->
+<a href="https://wa.me/18293319722" class="whatsapp">💬</a>
+
 <footer>
-    <p>📞 809-000-0000</p>
+    <p>© 2026 Muebles Yao y Ado</p>
 </footer>
 
 </body>
